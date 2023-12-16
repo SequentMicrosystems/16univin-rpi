@@ -1,2 +1,2 @@
-# Sixtenn Universal Inputs Modbus Registers Map
+# Sixteen Universal Inputs Modbus Registers Map
 
