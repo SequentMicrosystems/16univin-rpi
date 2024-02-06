@@ -16,7 +16,7 @@ from setuptools import setup, find_packages
 setup(
     name='SM16univin',
     packages=find_packages(),
-    version='1.0.1',
+    version='1.0.2',
     license='MIT',
     description='Library to control Sixteen Analog/Digital Inputs 8-Layer Stackable HAT for Raspberry Pi',
     #long_description=long_description,

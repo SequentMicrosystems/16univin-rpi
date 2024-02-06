@@ -90,7 +90,7 @@ class SM16univin:
             (int) Led state
         """
         self._check_channel("led", led)
-        val = self._get_byte(I2C_MEM.LEDS)
+        val = self._get_word(I2C_MEM.LEDS)
         if (val & (1 << (led - 1))) != 0:
             return 1
         return 0
@@ -100,7 +100,7 @@ class SM16univin:
         Returns:
             (int) Leds state bitmask
         """
-        val = self._get_byte(I2C_MEM.LEDS)
+        val = self._get_word(I2C_MEM.LEDS)
         return val
     def set_led(self, led, val):
         """Set led state.
@@ -122,9 +122,9 @@ class SM16univin:
         Args:
             val (int): Leds bitmask
         """
-        if(not (0 <= val and val <= (1 << CHANNEL_NO["leds"]) - 1)):
+        if(not (0 <= val and val <= (1 << CHANNEL_NO["led"]) - 1)):
             raise ValueError("Invalid led mask!")
-        self._set_byte(I2C_MEM.LEDS, 0xff & val)
+        self._set_word(I2C_MEM.LEDS, val)
 
     def get_u_in(self, channel):
         """Get 0-10V input channel value in volts.
