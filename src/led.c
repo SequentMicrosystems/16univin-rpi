@@ -13,7 +13,7 @@ const CliCmdType CMD_LED_READ =
 	2,
 	&doLedRead,
 	"  ledrd            Read led state\n",
-	"  Usage 1:         "PROGRAM_NAME" <id> ledrd <channel[1.."STR(LED_CH_NO)"]>\n",
+	"  Usage 1:         "PROGRAM_NAME" <id> ledrd <channel[1.."STR(LED_CH_NO)"]>\n"
 	"  Usage 2:         "PROGRAM_NAME" <id> ledrd\n",
 	"  Example:         "PROGRAM_NAME" 0 ledrd 2  Get the state of led #2 on board #0\n"
 };
@@ -105,10 +105,7 @@ int doLedWrite(int argc, char *argv[])
 	{
 		uint16_t state = 0;
 		state = (uint16_t)atoi(argv[3]);
-		if (! (0 <= state && state <= (1 << LED_CH_NO) - 1))
-		{
-			return ARG_RANGE_ERR;
-		}
+		
 		uint8_t buf[2];
 		memcpy(buf, &state, 2);
 		if (OK != i2cMem8Write(dev, I2C_MEM_LEDS, buf, 2))
