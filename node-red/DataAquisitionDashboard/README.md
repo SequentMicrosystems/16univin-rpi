@@ -2,7 +2,7 @@
 
 This is a data acquisition dashboard example created in Node-RED with Sequent Microsystems [Sixteen Analog/Digital Inputs 8-Layer Stackable HAT for Raspberry Pi](https://sequentmicrosystems.com/products/sixteen-analog-digital-inputs-8-layer-stackable-hat-for-raspberry-pi?variant=44857261523196)
 
-## Initial setup
+## I) Initial setup
 ### 1) Node-RED
 * Install NodeRed with the following command:
 ```bash
@@ -78,7 +78,7 @@ docker run -d --name=grafana -p 3000:3000 grafana/grafana-enterprise:10.4.0-ubun
 * You can check if the container was successfully created:
 ```docker ps``` or ```docker container ls```
 
-## Importing and configuring the Node-RED flow
+## II) Importing and configuring the Node-RED flow
 
 * Import the Data Acquisition Dashboard flow: Go to Menu > Import > select a file to import. Load the provided [flows.json](https://github.com/SequentMicrosystems/16univin-rpi/blob/main/node-red/DataAquisitionDashboard/flows.json) file and click the Import button.
 ![import](Pic/Import1.jpg)
@@ -87,8 +87,8 @@ docker run -d --name=grafana -p 3000:3000 grafana/grafana-enterprise:10.4.0-ubun
 
 * Configure all InfluxDB nodes inside Node-RED with the IP address of your Raspberry Pi and port ```8086``` then click again the ```Deploy``` button.
 
-## Dashboard functionality
+## III) Dashboard functionality
 * TODO
 
-## Integration with Grafana
+## IV) Integration with Grafana
 * TODO
