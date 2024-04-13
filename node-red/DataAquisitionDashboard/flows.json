@@ -131279,7 +131279,7 @@
     {
         "id": "6e94f17d8f5d0e47",
         "type": "influxdb",
-        "hostname": "192.168.1.114",
+        "hostname": "<ip_address>",
         "port": "8086",
         "protocol": "http",
         "database": "database_influx",
