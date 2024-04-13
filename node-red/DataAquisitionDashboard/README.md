@@ -65,7 +65,7 @@ sudo usermod -aG docker pi
 sudo apt install -y libffi-dev libssl-dev python3 python3-pip
 ```
 
-* You can verify that Docker was installed correctly:
+* You can verify if Docker was installed correctly:
 ```bash
 docker --version
 ```
@@ -81,11 +81,19 @@ docker run -d --name=grafana -p 3000:3000 grafana/grafana-enterprise:10.4.0-ubun
 ## II) Importing and configuring the Node-RED flow
 
 * Import the Data Acquisition Dashboard flow: Go to Menu > Import > select a file to import. Load the provided [flows.json](https://github.com/SequentMicrosystems/16univin-rpi/blob/main/node-red/DataAquisitionDashboard/flows.json) file and click the Import button.
-![import](Pic/Import1.jpg)
+![import](Pic/Import1.png)
+![import](Pic/Import2.png)
 
-* Click on the top right ```Deploy``` button.
+* Click on the top right ```Deploy``` red button.
 
-* Configure all InfluxDB nodes inside Node-RED with the IP address of your Raspberry Pi and port ```8086``` then click again the ```Deploy``` button.
+* Configure the InfluxDB server inside Node-RED with the IP address of your Raspberry Pi and port ```8086``` then click again the ```Deploy``` red button. You can find all the database related nodes using ```CTRL+F```. Just choose one and double-click it.
+![import](Pic/Influxdb1.png)
+
+* Click the ```Edit``` button for the database server.
+![import](Pic/Influxdb2.png)
+
+* Configure here the IP address of your Raspberry Pi then click ```Update```.
+![import](Pic/Influxdb3.png)
 
 ## III) Dashboard functionality
 * TODO
