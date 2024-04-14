@@ -195,7 +195,7 @@ docker run -d --name=grafana -p 3000:3000 grafana/grafana-enterprise:10.4.0-ubun
 
 * In ```Table view``` we select only the input we want to show in the table. It will show all the input data in cronological order with the newest value at the top of the table.
 
-* Example table view for ```Input 1```, same time scale of ```12 months```:
+* Example table view for ```Input 1```:
 
 ![import](Pic/Dashboard16.png)
 
