@@ -208,4 +208,92 @@ docker run -d --name=grafana -p 3000:3000 grafana/grafana-enterprise:10.4.0-ubun
 * Also, if the ```influxdb``` database or the ```influxdb``` nodes are not configured properly, the dashboard will throw a notification error in both views ```Database not available!```.
 
 ## IV) Integration with Grafana
-* TODO
+* Open a web browser and access the following link: ```http://<ip_address>:3000/```, where ```<ip_address>``` should be the IP address of your Raspberry Pi.
+* You will see a login page from Grafana:
+
+![import](Pic/Grafana1.png)
+
+* Default user: ```admin```, default password: ```admin```. We recommend changing the username and password.
+
+![import](Pic/Grafana2.png)
+
+* This is the home page of Grafana:
+
+![import](Pic/Grafana3.png)
+
+* Click on ```Connections```->```Add new connection``` and search for ```influxdb```.
+
+![import](Pic/Grafana4.png)
+
+![import](Pic/Grafana5.png)
+
+* Then click ```Add new data source``` on the top right corner.
+
+![import](Pic/Grafana6.png)
+
+* In the next step we need to add information regarding the ```influxdb``` server present on the Raspberry Pi. In our case we need to add the ```URL``` and the ```Database```.
+
+![import](Pic/Grafana7.png)
+
+![import](Pic/Grafana8.png)
+
+* The ```URL``` for ```influxdb``` should look like this: ```http://<ip_address>:8086/```, where ```<ip_address>``` is the IP address of your Raspberry Pi. For the ```Database``` field we should write like this: ```database_influx```.
+
+![import](Pic/Grafana9.png)
+
+![import](Pic/Grafana10.png)
+
+* Then click ```Save & test``` at the bottom of the page. If you have already some data in the database, you should see a message like this:
+
+![import](Pic/Grafana11.png)
+
+* Now that we have connected Grafana to the ```influxdb``` database, we should be able to create custom dashboards based on the data.
+* On the left panel menu click on ```Dashboards```, then click ```+ Create Dashboard```.
+
+![import](Pic/Grafana12.png)
+
+* There are 3 options in Grafana to create a dashboard:
+
+![import](Pic/Grafana13.png)
+
+* For now we will concentrate on ```+ Add visualization``` option. Click it then select ```influxdb``` as data source.
+
+![import](Pic/Grafana14.png)
+
+* You will then see a dashboard configurator on the screen:
+
+![import](Pic/Grafana15.png)
+
+* Clear the default query:
+
+![import](Pic/Grafana16.png)
+
+* Click on ```select measurement``` then select the ```input_data``` measurement:
+
+![import](Pic/Grafana17.png)
+
+![import](Pic/Grafana18.png)
+
+* Then click on ```field(value)``` and select what input you want. We will select ```input_1``` for this example:
+
+![import](Pic/Grafana19.png)
+
+![import](Pic/Grafana20.png)
+
+* Then select a time range to show the data from the selected input. We will select ```last 6 months```
+
+![import](Pic/Grafana21.png)
+
+* You can then select ```Switch to table``` if you want to show the data in a table form:
+
+![import](Pic/Grafana22.png)
+
+* Then you can enable ```Show table header``` to show the actual column names:
+
+![import](Pic/Grafana23.png)
+
+* Then you can write a ```Title``` for this dashboard, a ```Description``` and ```Save``` it. Or you can add more fields to the table and then save it. It is up to the user's preference. On the right panel you can customize the dashboard as you wish.
+
+* The saved dashboard can be found in the ```Dashboards``` menu:
+
+![import](Pic/Grafana24.png)
