@@ -3704,7 +3704,7 @@
         "layout": "row-spread",
         "className": "",
         "x": 1920,
-        "y": 300,
+        "y": 140,
         "wires": []
     },
     {
@@ -3863,7 +3863,7 @@
         "className": "",
         "topicType": "msg",
         "x": 1910,
-        "y": 420,
+        "y": 540,
         "wires": [
             [
                 "5c9af83a223a9816"
@@ -3890,7 +3890,7 @@
         "to": "",
         "reg": false,
         "x": 2140,
-        "y": 420,
+        "y": 540,
         "wires": [
             []
         ]
@@ -3914,7 +3914,7 @@
         "className": "",
         "topicType": "msg",
         "x": 1910,
-        "y": 480,
+        "y": 720,
         "wires": [
             [
                 "11293a57a64fe06e"
@@ -3941,7 +3941,7 @@
         "to": "",
         "reg": false,
         "x": 2140,
-        "y": 480,
+        "y": 720,
         "wires": [
             []
         ]
@@ -4898,7 +4898,7 @@
         "className": "",
         "topicType": "msg",
         "x": 1910,
-        "y": 540,
+        "y": 900,
         "wires": [
             [
                 "8344dc8ab5a0be47"
@@ -4924,7 +4924,7 @@
         "className": "",
         "topicType": "msg",
         "x": 1910,
-        "y": 600,
+        "y": 1100,
         "wires": [
             [
                 "512b60caf07c7ca0"
@@ -4950,7 +4950,7 @@
         "className": "",
         "topicType": "msg",
         "x": 1910,
-        "y": 660,
+        "y": 1280,
         "wires": [
             [
                 "545d790c37dd7278"
@@ -4976,7 +4976,7 @@
         "className": "",
         "topicType": "msg",
         "x": 1910,
-        "y": 720,
+        "y": 1480,
         "wires": [
             [
                 "2a9f402d2047fb8b"
@@ -5002,7 +5002,7 @@
         "className": "",
         "topicType": "msg",
         "x": 1910,
-        "y": 780,
+        "y": 1680,
         "wires": [
             [
                 "7a6410dd2260d7fd"
@@ -5028,7 +5028,7 @@
         "className": "",
         "topicType": "msg",
         "x": 1910,
-        "y": 840,
+        "y": 1880,
         "wires": [
             [
                 "3eef03148d69983d"
@@ -5054,7 +5054,7 @@
         "className": "",
         "topicType": "msg",
         "x": 1910,
-        "y": 900,
+        "y": 2060,
         "wires": [
             [
                 "93f5c064598b8a63"
@@ -5080,7 +5080,7 @@
         "className": "",
         "topicType": "msg",
         "x": 1910,
-        "y": 960,
+        "y": 2260,
         "wires": [
             [
                 "fe695181268d1919"
@@ -5106,7 +5106,7 @@
         "className": "",
         "topicType": "msg",
         "x": 1910,
-        "y": 1020,
+        "y": 2460,
         "wires": [
             [
                 "f26d08e769fba9bf"
@@ -5132,7 +5132,7 @@
         "className": "",
         "topicType": "msg",
         "x": 1910,
-        "y": 1080,
+        "y": 2660,
         "wires": [
             [
                 "1f80f3e182f5fc25"
@@ -5158,7 +5158,7 @@
         "className": "",
         "topicType": "msg",
         "x": 1910,
-        "y": 1140,
+        "y": 2860,
         "wires": [
             [
                 "d14f6698fe9851f7"
@@ -5184,7 +5184,7 @@
         "className": "",
         "topicType": "msg",
         "x": 1910,
-        "y": 1200,
+        "y": 3060,
         "wires": [
             [
                 "94eac9862cd0a7d9"
@@ -5210,7 +5210,7 @@
         "className": "",
         "topicType": "msg",
         "x": 1910,
-        "y": 1260,
+        "y": 3260,
         "wires": [
             [
                 "e885d1bf3d1e9baa"
@@ -5575,7 +5575,7 @@
         "to": "",
         "reg": false,
         "x": 2140,
-        "y": 540,
+        "y": 900,
         "wires": [
             []
         ]
@@ -5600,7 +5600,7 @@
         "to": "",
         "reg": false,
         "x": 2140,
-        "y": 600,
+        "y": 1100,
         "wires": [
             []
         ]
@@ -5625,7 +5625,7 @@
         "to": "",
         "reg": false,
         "x": 2140,
-        "y": 660,
+        "y": 1280,
         "wires": [
             []
         ]
@@ -5650,7 +5650,7 @@
         "to": "",
         "reg": false,
         "x": 2140,
-        "y": 720,
+        "y": 1480,
         "wires": [
             []
         ]
@@ -5675,7 +5675,7 @@
         "to": "",
         "reg": false,
         "x": 2140,
-        "y": 780,
+        "y": 1680,
         "wires": [
             []
         ]
@@ -5700,7 +5700,7 @@
         "to": "",
         "reg": false,
         "x": 2140,
-        "y": 840,
+        "y": 1880,
         "wires": [
             []
         ]
@@ -5725,7 +5725,7 @@
         "to": "",
         "reg": false,
         "x": 2140,
-        "y": 900,
+        "y": 2060,
         "wires": [
             []
         ]
@@ -5750,7 +5750,7 @@
         "to": "",
         "reg": false,
         "x": 2140,
-        "y": 960,
+        "y": 2260,
         "wires": [
             []
         ]
@@ -5775,7 +5775,7 @@
         "to": "",
         "reg": false,
         "x": 2140,
-        "y": 1020,
+        "y": 2460,
         "wires": [
             []
         ]
@@ -5800,7 +5800,7 @@
         "to": "",
         "reg": false,
         "x": 2140,
-        "y": 1080,
+        "y": 2660,
         "wires": [
             []
         ]
@@ -5825,7 +5825,7 @@
         "to": "",
         "reg": false,
         "x": 2140,
-        "y": 1140,
+        "y": 2860,
         "wires": [
             []
         ]
@@ -5850,7 +5850,7 @@
         "to": "",
         "reg": false,
         "x": 2140,
-        "y": 1200,
+        "y": 3060,
         "wires": [
             []
         ]
@@ -5875,7 +5875,7 @@
         "to": "",
         "reg": false,
         "x": 2140,
-        "y": 1260,
+        "y": 3260,
         "wires": [
             []
         ]
@@ -9127,7 +9127,9 @@
         "z": "d9ae606a9f4ff99f",
         "name": "link in 83",
         "links": [
-            "6566100b.6370a"
+            "6566100b.6370a",
+            "59c5044ea7a3f1c8",
+            "6e328f53b5585dd4"
         ],
         "x": 1785,
         "y": 360,
@@ -9143,10 +9145,12 @@
         "z": "d9ae606a9f4ff99f",
         "name": "link in 84",
         "links": [
-            "d3d538b3a12b0b69"
+            "d3d538b3a12b0b69",
+            "ec78fa754f7335de",
+            "11cc9996433dccb1"
         ],
         "x": 1785,
-        "y": 420,
+        "y": 540,
         "wires": [
             [
                 "866c2713060700d4"
@@ -9159,10 +9163,12 @@
         "z": "d9ae606a9f4ff99f",
         "name": "link in 85",
         "links": [
-            "5aa125470e1c8e22"
+            "5aa125470e1c8e22",
+            "9e04e615763e267b",
+            "c7bea34279ac45b0"
         ],
         "x": 1785,
-        "y": 480,
+        "y": 720,
         "wires": [
             [
                 "58dcdfdc2a223d4c"
@@ -9175,10 +9181,12 @@
         "z": "d9ae606a9f4ff99f",
         "name": "link in 86",
         "links": [
-            "049970154d79ce16"
+            "049970154d79ce16",
+            "691df6913d617b87",
+            "764796bb9600b889"
         ],
         "x": 1785,
-        "y": 540,
+        "y": 900,
         "wires": [
             [
                 "e03158789358c884"
@@ -9191,10 +9199,12 @@
         "z": "d9ae606a9f4ff99f",
         "name": "link in 87",
         "links": [
-            "a8302d7de1fcc092"
+            "a8302d7de1fcc092",
+            "a7cc485669a21859",
+            "4e2446c4e6b90c3f"
         ],
         "x": 1785,
-        "y": 600,
+        "y": 1100,
         "wires": [
             [
                 "3a3dc7ddd074aa1a"
@@ -9207,10 +9217,12 @@
         "z": "d9ae606a9f4ff99f",
         "name": "link in 88",
         "links": [
-            "bf63eb8ab1e116a3"
+            "bf63eb8ab1e116a3",
+            "98848aec80a888af",
+            "56d27530fa401d80"
         ],
         "x": 1785,
-        "y": 660,
+        "y": 1280,
         "wires": [
             [
                 "055baf7e87afe70a"
@@ -9223,10 +9235,12 @@
         "z": "d9ae606a9f4ff99f",
         "name": "link in 89",
         "links": [
-            "c23d167d326439db"
+            "c23d167d326439db",
+            "0709a91253a9c52c",
+            "5c764b5b2d440c4c"
         ],
         "x": 1785,
-        "y": 720,
+        "y": 1480,
         "wires": [
             [
                 "21f515336e096ba1"
@@ -9239,10 +9253,12 @@
         "z": "d9ae606a9f4ff99f",
         "name": "link in 90",
         "links": [
-            "fcb37528373b67bf"
+            "fcb37528373b67bf",
+            "cc963f27b4011f04",
+            "f4d79a756615ef92"
         ],
         "x": 1785,
-        "y": 780,
+        "y": 1680,
         "wires": [
             [
                 "d786709a622dcf20"
@@ -9255,10 +9271,12 @@
         "z": "d9ae606a9f4ff99f",
         "name": "link in 91",
         "links": [
-            "8b5e805bbe3cc734"
+            "8b5e805bbe3cc734",
+            "f30a4b1f4e896f53",
+            "c3bd3da67ffb548b"
         ],
         "x": 1785,
-        "y": 840,
+        "y": 1880,
         "wires": [
             [
                 "73059635c151bd03"
@@ -9271,10 +9289,12 @@
         "z": "d9ae606a9f4ff99f",
         "name": "link in 92",
         "links": [
-            "9a742bbef281d505"
+            "9a742bbef281d505",
+            "e327aed9c74df9e6",
+            "f4e2d579465ed1b8"
         ],
         "x": 1785,
-        "y": 900,
+        "y": 2060,
         "wires": [
             [
                 "57203560aff932ed"
@@ -9287,10 +9307,12 @@
         "z": "d9ae606a9f4ff99f",
         "name": "link in 93",
         "links": [
-            "b41a3c1b9cf75f35"
+            "b41a3c1b9cf75f35",
+            "e86c3fd67792fc05",
+            "cfdbf46fc5d398ca"
         ],
         "x": 1785,
-        "y": 960,
+        "y": 2260,
         "wires": [
             [
                 "2ed168682717225c"
@@ -9303,10 +9325,12 @@
         "z": "d9ae606a9f4ff99f",
         "name": "link in 94",
         "links": [
-            "6bac7ff302772622"
+            "6bac7ff302772622",
+            "6911f795773fa72c",
+            "75f582e55ac2d3a6"
         ],
         "x": 1785,
-        "y": 1020,
+        "y": 2460,
         "wires": [
             [
                 "bb37b69557d61621"
@@ -9319,10 +9343,12 @@
         "z": "d9ae606a9f4ff99f",
         "name": "link in 95",
         "links": [
-            "8c8f17b4d7d11a1d"
+            "8c8f17b4d7d11a1d",
+            "212434c91a32aa7e",
+            "30038526444b9470"
         ],
         "x": 1785,
-        "y": 1080,
+        "y": 2660,
         "wires": [
             [
                 "1d547deb7d89b114"
@@ -9335,10 +9361,12 @@
         "z": "d9ae606a9f4ff99f",
         "name": "link in 96",
         "links": [
-            "c61ed1be43c1b329"
+            "c61ed1be43c1b329",
+            "9efdd3ab085454e3",
+            "a240df5016a919d3"
         ],
         "x": 1785,
-        "y": 1140,
+        "y": 2860,
         "wires": [
             [
                 "47d06c374710e207"
@@ -9351,10 +9379,12 @@
         "z": "d9ae606a9f4ff99f",
         "name": "link in 97",
         "links": [
-            "a8cc07a78dbc454f"
+            "a8cc07a78dbc454f",
+            "5c568c39eddd3b9f",
+            "91d24ff1d190c6bd"
         ],
         "x": 1785,
-        "y": 1200,
+        "y": 3060,
         "wires": [
             [
                 "ee83b742a5b60dfe"
@@ -9367,10 +9397,12 @@
         "z": "d9ae606a9f4ff99f",
         "name": "link in 98",
         "links": [
-            "ad15c2370f2a11ef"
+            "ad15c2370f2a11ef",
+            "08f6cef0b6f74aa2",
+            "c4f7ec1aacfef08e"
         ],
         "x": 1785,
-        "y": 1260,
+        "y": 3260,
         "wires": [
             [
                 "655cb58dcee1b835"
@@ -10815,7 +10847,8 @@
             "1d920fa8ea946593",
             "b403a6b4d1199005",
             "adfa09f32644c2e8",
-            "10437c51b300e503"
+            "10437c51b300e503",
+            "c172342bbee8133c"
         ],
         "x": 1615,
         "y": 260,
@@ -10831,7 +10864,8 @@
             "9e700a7700589227",
             "dc93866ff86a3455",
             "fa5d49d91d9f99e8",
-            "b4dc80524b994b5d"
+            "b4dc80524b994b5d",
+            "d5a508024d5bb556"
         ],
         "x": 1615,
         "y": 300,
@@ -13853,7 +13887,8 @@
             "869cede7885b0431",
             "63d22612daac2737",
             "80d60c5fb9c6c5f4",
-            "0ec6905313be6c57"
+            "0ec6905313be6c57",
+            "1bcab7d03c1314e4"
         ],
         "x": 1605,
         "y": 420,
@@ -13869,7 +13904,8 @@
             "dc56d1a116cd2902",
             "d1a8b14e5d1cdce8",
             "c039c0ad6c0e472b",
-            "5af0a6a64c549036"
+            "5af0a6a64c549036",
+            "7fe4f19972403bc5"
         ],
         "x": 1605,
         "y": 460,
@@ -13885,7 +13921,8 @@
             "74b924eadaae36ca",
             "843a4c9d733bdc3e",
             "04e9938ee149a201",
-            "437ef86da5b49f05"
+            "437ef86da5b49f05",
+            "6bb4123cc78923aa"
         ],
         "x": 1605,
         "y": 600,
@@ -13901,7 +13938,8 @@
             "18e531e7aebead5a",
             "00d962672cfd4e14",
             "ca5a74c3b9a1a2de",
-            "3ebb08bc48ebfa69"
+            "3ebb08bc48ebfa69",
+            "db1a8cbeb0142489"
         ],
         "x": 1605,
         "y": 640,
@@ -13917,7 +13955,8 @@
             "557f77bc0c01fe88",
             "55eb181d7042ed47",
             "ae8529a42e949177",
-            "45744054d8e5db4f"
+            "45744054d8e5db4f",
+            "19f3b2f3c8895d46"
         ],
         "x": 1605,
         "y": 780,
@@ -13933,7 +13972,8 @@
             "46b8bbe4acdb470a",
             "11f0f41c90ec2c50",
             "0bc0eabb3aeb35cb",
-            "5a40d43358f69100"
+            "5a40d43358f69100",
+            "88e2a385e5e80657"
         ],
         "x": 1605,
         "y": 820,
@@ -13949,7 +13989,8 @@
             "986f40b6e559ca92",
             "3ef0ac701f1e8c4c",
             "94a90dd4eab3dea4",
-            "5b569c9dc28449ff"
+            "5b569c9dc28449ff",
+            "faf11430fe4318bd"
         ],
         "x": 1605,
         "y": 960,
@@ -13965,7 +14006,8 @@
             "d11df36a5bc8c525",
             "8e149c9465e4d0a6",
             "4efaa8dd687cecba",
-            "be8324c37097101d"
+            "be8324c37097101d",
+            "7c0584fe8aec9eb2"
         ],
         "x": 1605,
         "y": 1000,
@@ -13981,7 +14023,8 @@
             "9f7894a4fc61dcea",
             "6ce210591512847d",
             "873870ed5996a46e",
-            "cb6f617a543a284e"
+            "cb6f617a543a284e",
+            "03514f4404a0823a"
         ],
         "x": 1605,
         "y": 1160,
@@ -13997,7 +14040,8 @@
             "1615a2cd7567180c",
             "a8633935e770c9e8",
             "8c696f114b9f0dbe",
-            "060f13175ec3b1bc"
+            "060f13175ec3b1bc",
+            "fad14a7ec1c49a0d"
         ],
         "x": 1605,
         "y": 1200,
@@ -14013,7 +14057,8 @@
             "8d9d86ddc24c7745",
             "c9bcce07b5c6580d",
             "bfcc03f21ac2f054",
-            "ce5a117b1cd51ae8"
+            "ce5a117b1cd51ae8",
+            "8855c6614a231fea"
         ],
         "x": 1605,
         "y": 1340,
@@ -14029,7 +14074,8 @@
             "aa507479f5d1ec2c",
             "8098bc61bc01f396",
             "08dc422d353e1c39",
-            "87db6d88db052ec3"
+            "87db6d88db052ec3",
+            "a8f1b3584f31e417"
         ],
         "x": 1605,
         "y": 1380,
@@ -14045,7 +14091,8 @@
             "e0cd09a3cbf24c0e",
             "0a12df5771e60278",
             "28f1b9513163a12a",
-            "f86ec26a1a0dc875"
+            "f86ec26a1a0dc875",
+            "53d2848c539c41a8"
         ],
         "x": 1605,
         "y": 1540,
@@ -14061,7 +14108,8 @@
             "51f55ac3c8647b11",
             "6378c3f101402847",
             "7804aff1bdcdd7fc",
-            "2b15ecc1a1e46d0c"
+            "2b15ecc1a1e46d0c",
+            "19a1cabdd9e5060e"
         ],
         "x": 1605,
         "y": 1580,
@@ -14077,7 +14125,8 @@
             "89c662913d1d0c8d",
             "ae3249c3c9e13dc4",
             "e1805bbfa933226a",
-            "b25c39c129aec474"
+            "b25c39c129aec474",
+            "5eeba13d1335d38f"
         ],
         "x": 1605,
         "y": 1760,
@@ -14093,7 +14142,8 @@
             "25a82724f214eece",
             "14e9e2ed0b8dd401",
             "52626403e459559d",
-            "7f36e63a3626314d"
+            "7f36e63a3626314d",
+            "fb3c1f10752a5656"
         ],
         "x": 1605,
         "y": 1800,
@@ -14109,7 +14159,8 @@
             "c7375cec66319d58",
             "864704b473688af1",
             "cd4bd6440d908e44",
-            "921c97792eaaae9e"
+            "921c97792eaaae9e",
+            "eebfb7dc91757923"
         ],
         "x": 1605,
         "y": 1940,
@@ -14125,7 +14176,8 @@
             "9962e2d5061cfd64",
             "d9d9f4e25e6fc744",
             "df27acd8ec157076",
-            "a35bc2ca21511bd9"
+            "a35bc2ca21511bd9",
+            "6273328a06086370"
         ],
         "x": 1605,
         "y": 1980,
@@ -14141,7 +14193,8 @@
             "67267f93cec709bd",
             "340721bbfa76045b",
             "82b9bdc206ae91a6",
-            "713efc820d465abe"
+            "713efc820d465abe",
+            "afe1fa1e5d4f6859"
         ],
         "x": 1605,
         "y": 2120,
@@ -14157,7 +14210,8 @@
             "5f211f682a837a5c",
             "1bbb470a75760ef4",
             "f2e00d0b564a3b61",
-            "b3ecc398d3619b6e"
+            "b3ecc398d3619b6e",
+            "d3b9201c2a93f50f"
         ],
         "x": 1605,
         "y": 2160,
@@ -14173,7 +14227,8 @@
             "ef02799ef74b020e",
             "ea5141d9d8ef2262",
             "902f89ac8721fd23",
-            "df3d43cb2462529d"
+            "df3d43cb2462529d",
+            "6f4aaadbbe243d6d"
         ],
         "x": 1605,
         "y": 2320,
@@ -14189,7 +14244,8 @@
             "1119087df8ee3a37",
             "787e474aad159982",
             "8f198692dc7fab47",
-            "e273197c29d81dca"
+            "e273197c29d81dca",
+            "440f02cd07f7033e"
         ],
         "x": 1605,
         "y": 2360,
@@ -14205,7 +14261,8 @@
             "86e38e918d5e340b",
             "2a960eac17296ca2",
             "2b1c1d24c2968657",
-            "cda2107f724a944b"
+            "cda2107f724a944b",
+            "86039fe79e36751d"
         ],
         "x": 1605,
         "y": 2540,
@@ -14221,7 +14278,8 @@
             "bf6f1fb20b590be2",
             "9ce5d60b06e7fcd3",
             "be4258d634e1c5ac",
-            "d962df1267dcd9a5"
+            "d962df1267dcd9a5",
+            "d6ddd0848f2bd919"
         ],
         "x": 1605,
         "y": 2580,
@@ -14237,7 +14295,8 @@
             "b32758d1d0c7e111",
             "750556ac2a432cea",
             "5768660501f00f29",
-            "9ddbb1b5364e5d28"
+            "9ddbb1b5364e5d28",
+            "6c4c6b2186f4b51c"
         ],
         "x": 1605,
         "y": 2720,
@@ -14253,7 +14312,8 @@
             "9a072c2cdf5841f9",
             "8f6a06c8883bbe55",
             "fb1936c26213b8af",
-            "9ebeafc1b5868f85"
+            "9ebeafc1b5868f85",
+            "6c67be8dc6582072"
         ],
         "x": 1605,
         "y": 2760,
@@ -14269,7 +14329,8 @@
             "ff08b6e2fda10dc7",
             "a06c9e52fca4cd5b",
             "de93a8f6932f7558",
-            "73f9f7ec5953c8b8"
+            "73f9f7ec5953c8b8",
+            "d7ba776e6f4de3ab"
         ],
         "x": 1605,
         "y": 2920,
@@ -14285,7 +14346,8 @@
             "fcc308fb4cd92d7f",
             "93faed16fd7238af",
             "fd23d46e87905bae",
-            "ace2ebfe797569e4"
+            "ace2ebfe797569e4",
+            "282a07db47092dba"
         ],
         "x": 1605,
         "y": 2960,
@@ -14301,7 +14363,8 @@
             "7dd07d312517d8d1",
             "2a5bb12bf859f791",
             "0ff99745af530fc2",
-            "67e7d37968efe23f"
+            "67e7d37968efe23f",
+            "74bdd07828655d68"
         ],
         "x": 1605,
         "y": 3140,
@@ -14317,7 +14380,8 @@
             "b1a28e18bd5d786d",
             "fa50be1c745541c9",
             "d96fdd5486022e45",
-            "6b161d83bd10d257"
+            "6b161d83bd10d257",
+            "6c5c3df999bb1da6"
         ],
         "x": 1605,
         "y": 3180,
@@ -17818,6 +17882,1574 @@
         "className": "",
         "x": 3350,
         "y": 140,
+        "wires": []
+    },
+    {
+        "id": "f80e0c7ae945c41b",
+        "type": "function",
+        "z": "d9ae606a9f4ff99f",
+        "name": "config 1-10V, set default values (Measurement)",
+        "func": "var Vunit = \"Voltage\";\nmsg.payload = Vunit;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2000,
+        "y": 220,
+        "wires": [
+            [
+                "59c5044ea7a3f1c8"
+            ]
+        ]
+    },
+    {
+        "id": "59c5044ea7a3f1c8",
+        "type": "link out",
+        "z": "d9ae606a9f4ff99f",
+        "name": "link out 215",
+        "mode": "link",
+        "links": [
+            "3c1919c77e7dac26"
+        ],
+        "x": 2225,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "c172342bbee8133c",
+        "type": "link in",
+        "z": "d9ae606a9f4ff99f",
+        "name": "link in 403",
+        "links": [
+            "f83801fb5bec614d"
+        ],
+        "x": 1765,
+        "y": 220,
+        "wires": [
+            [
+                "f80e0c7ae945c41b"
+            ]
+        ]
+    },
+    {
+        "id": "58059024f1b249ab",
+        "type": "function",
+        "z": "d9ae606a9f4ff99f",
+        "name": "config 1K/10K, set default values (Measurement)",
+        "func": "var Tunit = \"Temperature\";\nmsg.payload = Tunit;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2000,
+        "y": 280,
+        "wires": [
+            [
+                "6e328f53b5585dd4"
+            ]
+        ]
+    },
+    {
+        "id": "6e328f53b5585dd4",
+        "type": "link out",
+        "z": "d9ae606a9f4ff99f",
+        "name": "link out 216",
+        "mode": "link",
+        "links": [
+            "3c1919c77e7dac26"
+        ],
+        "x": 2225,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "d5a508024d5bb556",
+        "type": "link in",
+        "z": "d9ae606a9f4ff99f",
+        "name": "link in 404",
+        "links": [
+            "9666929d23e06374"
+        ],
+        "x": 1765,
+        "y": 280,
+        "wires": [
+            [
+                "58059024f1b249ab"
+            ]
+        ]
+    },
+    {
+        "id": "3baec8297082ef3c",
+        "type": "function",
+        "z": "d9ae606a9f4ff99f",
+        "name": "config 1-10V, set default values (Measurement)",
+        "func": "var Vunit = \"Voltage\";\nmsg.payload = Vunit;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2000,
+        "y": 420,
+        "wires": [
+            [
+                "ec78fa754f7335de"
+            ]
+        ]
+    },
+    {
+        "id": "34eaba1ae2fa32a8",
+        "type": "function",
+        "z": "d9ae606a9f4ff99f",
+        "name": "config 1K/10K, set default values (Measurement)",
+        "func": "var Tunit = \"Temperature\";\nmsg.payload = Tunit;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2000,
+        "y": 480,
+        "wires": [
+            [
+                "11cc9996433dccb1"
+            ]
+        ]
+    },
+    {
+        "id": "ff066fffa5eb1a31",
+        "type": "function",
+        "z": "d9ae606a9f4ff99f",
+        "name": "config 1-10V, set default values (Measurement)",
+        "func": "var Vunit = \"Voltage\";\nmsg.payload = Vunit;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2000,
+        "y": 600,
+        "wires": [
+            [
+                "9e04e615763e267b"
+            ]
+        ]
+    },
+    {
+        "id": "f74ee5f6fa8271be",
+        "type": "function",
+        "z": "d9ae606a9f4ff99f",
+        "name": "config 1K/10K, set default values (Measurement)",
+        "func": "var Tunit = \"Temperature\";\nmsg.payload = Tunit;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2000,
+        "y": 660,
+        "wires": [
+            [
+                "c7bea34279ac45b0"
+            ]
+        ]
+    },
+    {
+        "id": "110dbe66e70a4ad6",
+        "type": "function",
+        "z": "d9ae606a9f4ff99f",
+        "name": "config 1-10V, set default values (Measurement)",
+        "func": "var Vunit = \"Voltage\";\nmsg.payload = Vunit;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2000,
+        "y": 780,
+        "wires": [
+            [
+                "691df6913d617b87"
+            ]
+        ]
+    },
+    {
+        "id": "1ff3f2387269fd42",
+        "type": "function",
+        "z": "d9ae606a9f4ff99f",
+        "name": "config 1K/10K, set default values (Measurement)",
+        "func": "var Tunit = \"Temperature\";\nmsg.payload = Tunit;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2000,
+        "y": 840,
+        "wires": [
+            [
+                "764796bb9600b889"
+            ]
+        ]
+    },
+    {
+        "id": "632f44df49f1c0d0",
+        "type": "function",
+        "z": "d9ae606a9f4ff99f",
+        "name": "config 1-10V, set default values (Measurement)",
+        "func": "var Vunit = \"Voltage\";\nmsg.payload = Vunit;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2000,
+        "y": 960,
+        "wires": [
+            [
+                "a7cc485669a21859"
+            ]
+        ]
+    },
+    {
+        "id": "b8018130d7c05aba",
+        "type": "function",
+        "z": "d9ae606a9f4ff99f",
+        "name": "config 1K/10K, set default values (Measurement)",
+        "func": "var Tunit = \"Temperature\";\nmsg.payload = Tunit;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2000,
+        "y": 1020,
+        "wires": [
+            [
+                "4e2446c4e6b90c3f"
+            ]
+        ]
+    },
+    {
+        "id": "0996b592ec4ebf0b",
+        "type": "function",
+        "z": "d9ae606a9f4ff99f",
+        "name": "config 1-10V, set default values (Measurement)",
+        "func": "var Vunit = \"Voltage\";\nmsg.payload = Vunit;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2000,
+        "y": 1160,
+        "wires": [
+            [
+                "98848aec80a888af"
+            ]
+        ]
+    },
+    {
+        "id": "2cdfed5f049c6e18",
+        "type": "function",
+        "z": "d9ae606a9f4ff99f",
+        "name": "config 1K/10K, set default values (Measurement)",
+        "func": "var Tunit = \"Temperature\";\nmsg.payload = Tunit;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2000,
+        "y": 1220,
+        "wires": [
+            [
+                "56d27530fa401d80"
+            ]
+        ]
+    },
+    {
+        "id": "3ffcfffdea68424a",
+        "type": "function",
+        "z": "d9ae606a9f4ff99f",
+        "name": "config 1-10V, set default values (Measurement)",
+        "func": "var Vunit = \"Voltage\";\nmsg.payload = Vunit;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2000,
+        "y": 1340,
+        "wires": [
+            [
+                "0709a91253a9c52c"
+            ]
+        ]
+    },
+    {
+        "id": "1ad22a77402af4e5",
+        "type": "function",
+        "z": "d9ae606a9f4ff99f",
+        "name": "config 1K/10K, set default values (Measurement)",
+        "func": "var Tunit = \"Temperature\";\nmsg.payload = Tunit;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2000,
+        "y": 1400,
+        "wires": [
+            [
+                "5c764b5b2d440c4c"
+            ]
+        ]
+    },
+    {
+        "id": "d69ab0a2be28a41d",
+        "type": "function",
+        "z": "d9ae606a9f4ff99f",
+        "name": "config 1-10V, set default values (Measurement)",
+        "func": "var Vunit = \"Voltage\";\nmsg.payload = Vunit;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2000,
+        "y": 1540,
+        "wires": [
+            [
+                "cc963f27b4011f04"
+            ]
+        ]
+    },
+    {
+        "id": "9b099fdc71c12ef8",
+        "type": "function",
+        "z": "d9ae606a9f4ff99f",
+        "name": "config 1K/10K, set default values (Measurement)",
+        "func": "var Tunit = \"Temperature\";\nmsg.payload = Tunit;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2000,
+        "y": 1600,
+        "wires": [
+            [
+                "f4d79a756615ef92"
+            ]
+        ]
+    },
+    {
+        "id": "68b4d39a43803ab2",
+        "type": "function",
+        "z": "d9ae606a9f4ff99f",
+        "name": "config 1-10V, set default values (Measurement)",
+        "func": "var Vunit = \"Voltage\";\nmsg.payload = Vunit;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2000,
+        "y": 1740,
+        "wires": [
+            [
+                "f30a4b1f4e896f53"
+            ]
+        ]
+    },
+    {
+        "id": "97a460014c983ba3",
+        "type": "function",
+        "z": "d9ae606a9f4ff99f",
+        "name": "config 1K/10K, set default values (Measurement)",
+        "func": "var Tunit = \"Temperature\";\nmsg.payload = Tunit;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2000,
+        "y": 1800,
+        "wires": [
+            [
+                "c3bd3da67ffb548b"
+            ]
+        ]
+    },
+    {
+        "id": "cf15fd1c35c26361",
+        "type": "function",
+        "z": "d9ae606a9f4ff99f",
+        "name": "config 1-10V, set default values (Measurement)",
+        "func": "var Vunit = \"Voltage\";\nmsg.payload = Vunit;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2000,
+        "y": 1940,
+        "wires": [
+            [
+                "e327aed9c74df9e6"
+            ]
+        ]
+    },
+    {
+        "id": "52a9e663c14b7b0c",
+        "type": "function",
+        "z": "d9ae606a9f4ff99f",
+        "name": "config 1K/10K, set default values (Measurement)",
+        "func": "var Tunit = \"Temperature\";\nmsg.payload = Tunit;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2000,
+        "y": 2000,
+        "wires": [
+            [
+                "f4e2d579465ed1b8"
+            ]
+        ]
+    },
+    {
+        "id": "f3553aa3ae7bebf0",
+        "type": "function",
+        "z": "d9ae606a9f4ff99f",
+        "name": "config 1-10V, set default values (Measurement)",
+        "func": "var Vunit = \"Voltage\";\nmsg.payload = Vunit;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2000,
+        "y": 2120,
+        "wires": [
+            [
+                "e86c3fd67792fc05"
+            ]
+        ]
+    },
+    {
+        "id": "d48b2b1aa7e661de",
+        "type": "function",
+        "z": "d9ae606a9f4ff99f",
+        "name": "config 1K/10K, set default values (Measurement)",
+        "func": "var Tunit = \"Temperature\";\nmsg.payload = Tunit;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2000,
+        "y": 2180,
+        "wires": [
+            [
+                "cfdbf46fc5d398ca"
+            ]
+        ]
+    },
+    {
+        "id": "5ffb67e506d5b089",
+        "type": "function",
+        "z": "d9ae606a9f4ff99f",
+        "name": "config 1-10V, set default values (Measurement)",
+        "func": "var Vunit = \"Voltage\";\nmsg.payload = Vunit;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2000,
+        "y": 2320,
+        "wires": [
+            [
+                "6911f795773fa72c"
+            ]
+        ]
+    },
+    {
+        "id": "158d42f2db05a512",
+        "type": "function",
+        "z": "d9ae606a9f4ff99f",
+        "name": "config 1K/10K, set default values (Measurement)",
+        "func": "var Tunit = \"Temperature\";\nmsg.payload = Tunit;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2000,
+        "y": 2380,
+        "wires": [
+            [
+                "75f582e55ac2d3a6"
+            ]
+        ]
+    },
+    {
+        "id": "2b5395e3a9cf57e7",
+        "type": "function",
+        "z": "d9ae606a9f4ff99f",
+        "name": "config 1-10V, set default values (Measurement)",
+        "func": "var Vunit = \"Voltage\";\nmsg.payload = Vunit;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2000,
+        "y": 2520,
+        "wires": [
+            [
+                "212434c91a32aa7e"
+            ]
+        ]
+    },
+    {
+        "id": "943263be7e3e5708",
+        "type": "function",
+        "z": "d9ae606a9f4ff99f",
+        "name": "config 1K/10K, set default values (Measurement)",
+        "func": "var Tunit = \"Temperature\";\nmsg.payload = Tunit;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2000,
+        "y": 2580,
+        "wires": [
+            [
+                "30038526444b9470"
+            ]
+        ]
+    },
+    {
+        "id": "f4420579e5e142b6",
+        "type": "function",
+        "z": "d9ae606a9f4ff99f",
+        "name": "config 1-10V, set default values (Measurement)",
+        "func": "var Vunit = \"Voltage\";\nmsg.payload = Vunit;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2000,
+        "y": 2720,
+        "wires": [
+            [
+                "9efdd3ab085454e3"
+            ]
+        ]
+    },
+    {
+        "id": "1b2664f05f0fd4c0",
+        "type": "function",
+        "z": "d9ae606a9f4ff99f",
+        "name": "config 1K/10K, set default values (Measurement)",
+        "func": "var Tunit = \"Temperature\";\nmsg.payload = Tunit;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2000,
+        "y": 2780,
+        "wires": [
+            [
+                "a240df5016a919d3"
+            ]
+        ]
+    },
+    {
+        "id": "72a38997ef8030d2",
+        "type": "function",
+        "z": "d9ae606a9f4ff99f",
+        "name": "config 1-10V, set default values (Measurement)",
+        "func": "var Vunit = \"Voltage\";\nmsg.payload = Vunit;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2000,
+        "y": 2920,
+        "wires": [
+            [
+                "5c568c39eddd3b9f"
+            ]
+        ]
+    },
+    {
+        "id": "1fdf8133098bd550",
+        "type": "function",
+        "z": "d9ae606a9f4ff99f",
+        "name": "config 1K/10K, set default values (Measurement)",
+        "func": "var Tunit = \"Temperature\";\nmsg.payload = Tunit;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2000,
+        "y": 2980,
+        "wires": [
+            [
+                "91d24ff1d190c6bd"
+            ]
+        ]
+    },
+    {
+        "id": "54880ff45d2523a7",
+        "type": "function",
+        "z": "d9ae606a9f4ff99f",
+        "name": "config 1-10V, set default values (Measurement)",
+        "func": "var Vunit = \"Voltage\";\nmsg.payload = Vunit;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2000,
+        "y": 3120,
+        "wires": [
+            [
+                "08f6cef0b6f74aa2"
+            ]
+        ]
+    },
+    {
+        "id": "767445b20475df53",
+        "type": "function",
+        "z": "d9ae606a9f4ff99f",
+        "name": "config 1K/10K, set default values (Measurement)",
+        "func": "var Tunit = \"Temperature\";\nmsg.payload = Tunit;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2000,
+        "y": 3180,
+        "wires": [
+            [
+                "c4f7ec1aacfef08e"
+            ]
+        ]
+    },
+    {
+        "id": "1bcab7d03c1314e4",
+        "type": "link in",
+        "z": "d9ae606a9f4ff99f",
+        "name": "link in 405",
+        "links": [
+            "f479510cfcda16c4"
+        ],
+        "x": 1765,
+        "y": 420,
+        "wires": [
+            [
+                "3baec8297082ef3c"
+            ]
+        ]
+    },
+    {
+        "id": "7fe4f19972403bc5",
+        "type": "link in",
+        "z": "d9ae606a9f4ff99f",
+        "name": "link in 406",
+        "links": [
+            "b46da65bb6db456b"
+        ],
+        "x": 1765,
+        "y": 480,
+        "wires": [
+            [
+                "34eaba1ae2fa32a8"
+            ]
+        ]
+    },
+    {
+        "id": "ec78fa754f7335de",
+        "type": "link out",
+        "z": "d9ae606a9f4ff99f",
+        "name": "link out 217",
+        "mode": "link",
+        "links": [
+            "1421cc5547508b93"
+        ],
+        "x": 2225,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "11cc9996433dccb1",
+        "type": "link out",
+        "z": "d9ae606a9f4ff99f",
+        "name": "link out 218",
+        "mode": "link",
+        "links": [
+            "1421cc5547508b93"
+        ],
+        "x": 2225,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "6bb4123cc78923aa",
+        "type": "link in",
+        "z": "d9ae606a9f4ff99f",
+        "name": "link in 407",
+        "links": [
+            "d4f67682053acc4b"
+        ],
+        "x": 1765,
+        "y": 600,
+        "wires": [
+            [
+                "ff066fffa5eb1a31"
+            ]
+        ]
+    },
+    {
+        "id": "db1a8cbeb0142489",
+        "type": "link in",
+        "z": "d9ae606a9f4ff99f",
+        "name": "link in 408",
+        "links": [
+            "ba815aacb726c9bf"
+        ],
+        "x": 1765,
+        "y": 660,
+        "wires": [
+            [
+                "f74ee5f6fa8271be"
+            ]
+        ]
+    },
+    {
+        "id": "9e04e615763e267b",
+        "type": "link out",
+        "z": "d9ae606a9f4ff99f",
+        "name": "link out 219",
+        "mode": "link",
+        "links": [
+            "231d0d1746f608d0"
+        ],
+        "x": 2225,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "c7bea34279ac45b0",
+        "type": "link out",
+        "z": "d9ae606a9f4ff99f",
+        "name": "link out 220",
+        "mode": "link",
+        "links": [
+            "231d0d1746f608d0"
+        ],
+        "x": 2225,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "19f3b2f3c8895d46",
+        "type": "link in",
+        "z": "d9ae606a9f4ff99f",
+        "name": "link in 409",
+        "links": [
+            "db6c43e99b725fd1"
+        ],
+        "x": 1765,
+        "y": 780,
+        "wires": [
+            [
+                "110dbe66e70a4ad6"
+            ]
+        ]
+    },
+    {
+        "id": "88e2a385e5e80657",
+        "type": "link in",
+        "z": "d9ae606a9f4ff99f",
+        "name": "link in 410",
+        "links": [
+            "f43ae1e1dd9d80be"
+        ],
+        "x": 1765,
+        "y": 840,
+        "wires": [
+            [
+                "1ff3f2387269fd42"
+            ]
+        ]
+    },
+    {
+        "id": "691df6913d617b87",
+        "type": "link out",
+        "z": "d9ae606a9f4ff99f",
+        "name": "link out 221",
+        "mode": "link",
+        "links": [
+            "c39cc9b56c47373e"
+        ],
+        "x": 2225,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "764796bb9600b889",
+        "type": "link out",
+        "z": "d9ae606a9f4ff99f",
+        "name": "link out 222",
+        "mode": "link",
+        "links": [
+            "c39cc9b56c47373e"
+        ],
+        "x": 2225,
+        "y": 840,
+        "wires": []
+    },
+    {
+        "id": "faf11430fe4318bd",
+        "type": "link in",
+        "z": "d9ae606a9f4ff99f",
+        "name": "link in 411",
+        "links": [
+            "76dcc55da5de4883"
+        ],
+        "x": 1765,
+        "y": 960,
+        "wires": [
+            [
+                "632f44df49f1c0d0"
+            ]
+        ]
+    },
+    {
+        "id": "7c0584fe8aec9eb2",
+        "type": "link in",
+        "z": "d9ae606a9f4ff99f",
+        "name": "link in 412",
+        "links": [
+            "6444af9e4b388ad9"
+        ],
+        "x": 1765,
+        "y": 1020,
+        "wires": [
+            [
+                "b8018130d7c05aba"
+            ]
+        ]
+    },
+    {
+        "id": "a7cc485669a21859",
+        "type": "link out",
+        "z": "d9ae606a9f4ff99f",
+        "name": "link out 223",
+        "mode": "link",
+        "links": [
+            "a2273fa0e56e5db7"
+        ],
+        "x": 2225,
+        "y": 960,
+        "wires": []
+    },
+    {
+        "id": "4e2446c4e6b90c3f",
+        "type": "link out",
+        "z": "d9ae606a9f4ff99f",
+        "name": "link out 224",
+        "mode": "link",
+        "links": [
+            "a2273fa0e56e5db7"
+        ],
+        "x": 2225,
+        "y": 1020,
+        "wires": []
+    },
+    {
+        "id": "03514f4404a0823a",
+        "type": "link in",
+        "z": "d9ae606a9f4ff99f",
+        "name": "link in 413",
+        "links": [
+            "4fe7d455d4f70f07"
+        ],
+        "x": 1765,
+        "y": 1160,
+        "wires": [
+            [
+                "0996b592ec4ebf0b"
+            ]
+        ]
+    },
+    {
+        "id": "fad14a7ec1c49a0d",
+        "type": "link in",
+        "z": "d9ae606a9f4ff99f",
+        "name": "link in 414",
+        "links": [
+            "118bb1bb34afacb2"
+        ],
+        "x": 1765,
+        "y": 1220,
+        "wires": [
+            [
+                "2cdfed5f049c6e18"
+            ]
+        ]
+    },
+    {
+        "id": "98848aec80a888af",
+        "type": "link out",
+        "z": "d9ae606a9f4ff99f",
+        "name": "link out 225",
+        "mode": "link",
+        "links": [
+            "eea41460fcd2de10"
+        ],
+        "x": 2225,
+        "y": 1160,
+        "wires": []
+    },
+    {
+        "id": "56d27530fa401d80",
+        "type": "link out",
+        "z": "d9ae606a9f4ff99f",
+        "name": "link out 226",
+        "mode": "link",
+        "links": [
+            "eea41460fcd2de10"
+        ],
+        "x": 2225,
+        "y": 1220,
+        "wires": []
+    },
+    {
+        "id": "8855c6614a231fea",
+        "type": "link in",
+        "z": "d9ae606a9f4ff99f",
+        "name": "link in 415",
+        "links": [
+            "d2b45220230841d8"
+        ],
+        "x": 1765,
+        "y": 1340,
+        "wires": [
+            [
+                "3ffcfffdea68424a"
+            ]
+        ]
+    },
+    {
+        "id": "a8f1b3584f31e417",
+        "type": "link in",
+        "z": "d9ae606a9f4ff99f",
+        "name": "link in 416",
+        "links": [
+            "9cc3df9cc836735f"
+        ],
+        "x": 1765,
+        "y": 1400,
+        "wires": [
+            [
+                "1ad22a77402af4e5"
+            ]
+        ]
+    },
+    {
+        "id": "0709a91253a9c52c",
+        "type": "link out",
+        "z": "d9ae606a9f4ff99f",
+        "name": "link out 227",
+        "mode": "link",
+        "links": [
+            "25b2806f94760aaf"
+        ],
+        "x": 2225,
+        "y": 1340,
+        "wires": []
+    },
+    {
+        "id": "5c764b5b2d440c4c",
+        "type": "link out",
+        "z": "d9ae606a9f4ff99f",
+        "name": "link out 228",
+        "mode": "link",
+        "links": [
+            "25b2806f94760aaf"
+        ],
+        "x": 2225,
+        "y": 1400,
+        "wires": []
+    },
+    {
+        "id": "53d2848c539c41a8",
+        "type": "link in",
+        "z": "d9ae606a9f4ff99f",
+        "name": "link in 417",
+        "links": [
+            "e1fd2a794bfb5ad7"
+        ],
+        "x": 1765,
+        "y": 1540,
+        "wires": [
+            [
+                "d69ab0a2be28a41d"
+            ]
+        ]
+    },
+    {
+        "id": "19a1cabdd9e5060e",
+        "type": "link in",
+        "z": "d9ae606a9f4ff99f",
+        "name": "link in 418",
+        "links": [
+            "6743e3e4add92a65"
+        ],
+        "x": 1765,
+        "y": 1600,
+        "wires": [
+            [
+                "9b099fdc71c12ef8"
+            ]
+        ]
+    },
+    {
+        "id": "cc963f27b4011f04",
+        "type": "link out",
+        "z": "d9ae606a9f4ff99f",
+        "name": "link out 229",
+        "mode": "link",
+        "links": [
+            "1fe8eaa5328605a3"
+        ],
+        "x": 2225,
+        "y": 1540,
+        "wires": []
+    },
+    {
+        "id": "f4d79a756615ef92",
+        "type": "link out",
+        "z": "d9ae606a9f4ff99f",
+        "name": "link out 230",
+        "mode": "link",
+        "links": [
+            "1fe8eaa5328605a3"
+        ],
+        "x": 2225,
+        "y": 1600,
+        "wires": []
+    },
+    {
+        "id": "5eeba13d1335d38f",
+        "type": "link in",
+        "z": "d9ae606a9f4ff99f",
+        "name": "link in 419",
+        "links": [
+            "a2edfaa7faa11417"
+        ],
+        "x": 1765,
+        "y": 1740,
+        "wires": [
+            [
+                "68b4d39a43803ab2"
+            ]
+        ]
+    },
+    {
+        "id": "fb3c1f10752a5656",
+        "type": "link in",
+        "z": "d9ae606a9f4ff99f",
+        "name": "link in 420",
+        "links": [
+            "8d76d8c632600381"
+        ],
+        "x": 1765,
+        "y": 1800,
+        "wires": [
+            [
+                "97a460014c983ba3"
+            ]
+        ]
+    },
+    {
+        "id": "f30a4b1f4e896f53",
+        "type": "link out",
+        "z": "d9ae606a9f4ff99f",
+        "name": "link out 231",
+        "mode": "link",
+        "links": [
+            "a966f20e4d1c9557"
+        ],
+        "x": 2225,
+        "y": 1740,
+        "wires": []
+    },
+    {
+        "id": "c3bd3da67ffb548b",
+        "type": "link out",
+        "z": "d9ae606a9f4ff99f",
+        "name": "link out 232",
+        "mode": "link",
+        "links": [
+            "a966f20e4d1c9557"
+        ],
+        "x": 2225,
+        "y": 1800,
+        "wires": []
+    },
+    {
+        "id": "eebfb7dc91757923",
+        "type": "link in",
+        "z": "d9ae606a9f4ff99f",
+        "name": "link in 421",
+        "links": [
+            "34a99b9640196cb5"
+        ],
+        "x": 1765,
+        "y": 1940,
+        "wires": [
+            [
+                "cf15fd1c35c26361"
+            ]
+        ]
+    },
+    {
+        "id": "6273328a06086370",
+        "type": "link in",
+        "z": "d9ae606a9f4ff99f",
+        "name": "link in 422",
+        "links": [
+            "6343d3bbdd4d079c"
+        ],
+        "x": 1765,
+        "y": 2000,
+        "wires": [
+            [
+                "52a9e663c14b7b0c"
+            ]
+        ]
+    },
+    {
+        "id": "e327aed9c74df9e6",
+        "type": "link out",
+        "z": "d9ae606a9f4ff99f",
+        "name": "link out 233",
+        "mode": "link",
+        "links": [
+            "5b8fedd05ae2fc87"
+        ],
+        "x": 2225,
+        "y": 1940,
+        "wires": []
+    },
+    {
+        "id": "f4e2d579465ed1b8",
+        "type": "link out",
+        "z": "d9ae606a9f4ff99f",
+        "name": "link out 234",
+        "mode": "link",
+        "links": [
+            "5b8fedd05ae2fc87"
+        ],
+        "x": 2225,
+        "y": 2000,
+        "wires": []
+    },
+    {
+        "id": "afe1fa1e5d4f6859",
+        "type": "link in",
+        "z": "d9ae606a9f4ff99f",
+        "name": "link in 423",
+        "links": [
+            "b9599da2a5a1d830"
+        ],
+        "x": 1765,
+        "y": 2120,
+        "wires": [
+            [
+                "f3553aa3ae7bebf0"
+            ]
+        ]
+    },
+    {
+        "id": "d3b9201c2a93f50f",
+        "type": "link in",
+        "z": "d9ae606a9f4ff99f",
+        "name": "link in 424",
+        "links": [
+            "7eb7601006b91a46"
+        ],
+        "x": 1765,
+        "y": 2180,
+        "wires": [
+            [
+                "d48b2b1aa7e661de"
+            ]
+        ]
+    },
+    {
+        "id": "e86c3fd67792fc05",
+        "type": "link out",
+        "z": "d9ae606a9f4ff99f",
+        "name": "link out 235",
+        "mode": "link",
+        "links": [
+            "de24f65f8f5ef2f1"
+        ],
+        "x": 2225,
+        "y": 2120,
+        "wires": []
+    },
+    {
+        "id": "cfdbf46fc5d398ca",
+        "type": "link out",
+        "z": "d9ae606a9f4ff99f",
+        "name": "link out 236",
+        "mode": "link",
+        "links": [
+            "de24f65f8f5ef2f1"
+        ],
+        "x": 2225,
+        "y": 2180,
+        "wires": []
+    },
+    {
+        "id": "6f4aaadbbe243d6d",
+        "type": "link in",
+        "z": "d9ae606a9f4ff99f",
+        "name": "link in 425",
+        "links": [
+            "24426b864f6ec479"
+        ],
+        "x": 1765,
+        "y": 2320,
+        "wires": [
+            [
+                "5ffb67e506d5b089"
+            ]
+        ]
+    },
+    {
+        "id": "440f02cd07f7033e",
+        "type": "link in",
+        "z": "d9ae606a9f4ff99f",
+        "name": "link in 426",
+        "links": [
+            "6e8ac34c3f8124c7"
+        ],
+        "x": 1765,
+        "y": 2380,
+        "wires": [
+            [
+                "158d42f2db05a512"
+            ]
+        ]
+    },
+    {
+        "id": "6911f795773fa72c",
+        "type": "link out",
+        "z": "d9ae606a9f4ff99f",
+        "name": "link out 237",
+        "mode": "link",
+        "links": [
+            "edd59cc47cdde7fb"
+        ],
+        "x": 2225,
+        "y": 2320,
+        "wires": []
+    },
+    {
+        "id": "75f582e55ac2d3a6",
+        "type": "link out",
+        "z": "d9ae606a9f4ff99f",
+        "name": "link out 238",
+        "mode": "link",
+        "links": [
+            "edd59cc47cdde7fb"
+        ],
+        "x": 2225,
+        "y": 2380,
+        "wires": []
+    },
+    {
+        "id": "86039fe79e36751d",
+        "type": "link in",
+        "z": "d9ae606a9f4ff99f",
+        "name": "link in 427",
+        "links": [
+            "9f0e69347aa2a971"
+        ],
+        "x": 1765,
+        "y": 2520,
+        "wires": [
+            [
+                "2b5395e3a9cf57e7"
+            ]
+        ]
+    },
+    {
+        "id": "d6ddd0848f2bd919",
+        "type": "link in",
+        "z": "d9ae606a9f4ff99f",
+        "name": "link in 428",
+        "links": [
+            "5f9d18d41d1050cb"
+        ],
+        "x": 1765,
+        "y": 2580,
+        "wires": [
+            [
+                "943263be7e3e5708"
+            ]
+        ]
+    },
+    {
+        "id": "212434c91a32aa7e",
+        "type": "link out",
+        "z": "d9ae606a9f4ff99f",
+        "name": "link out 239",
+        "mode": "link",
+        "links": [
+            "e92ac2909254538d"
+        ],
+        "x": 2225,
+        "y": 2520,
+        "wires": []
+    },
+    {
+        "id": "30038526444b9470",
+        "type": "link out",
+        "z": "d9ae606a9f4ff99f",
+        "name": "link out 240",
+        "mode": "link",
+        "links": [
+            "e92ac2909254538d"
+        ],
+        "x": 2225,
+        "y": 2580,
+        "wires": []
+    },
+    {
+        "id": "6c4c6b2186f4b51c",
+        "type": "link in",
+        "z": "d9ae606a9f4ff99f",
+        "name": "link in 429",
+        "links": [
+            "357fd2d79950208c"
+        ],
+        "x": 1765,
+        "y": 2720,
+        "wires": [
+            [
+                "f4420579e5e142b6"
+            ]
+        ]
+    },
+    {
+        "id": "6c67be8dc6582072",
+        "type": "link in",
+        "z": "d9ae606a9f4ff99f",
+        "name": "link in 430",
+        "links": [
+            "08e1512b3e9fc571"
+        ],
+        "x": 1765,
+        "y": 2780,
+        "wires": [
+            [
+                "1b2664f05f0fd4c0"
+            ]
+        ]
+    },
+    {
+        "id": "9efdd3ab085454e3",
+        "type": "link out",
+        "z": "d9ae606a9f4ff99f",
+        "name": "link out 241",
+        "mode": "link",
+        "links": [
+            "394188338edbabb2"
+        ],
+        "x": 2225,
+        "y": 2720,
+        "wires": []
+    },
+    {
+        "id": "a240df5016a919d3",
+        "type": "link out",
+        "z": "d9ae606a9f4ff99f",
+        "name": "link out 242",
+        "mode": "link",
+        "links": [
+            "394188338edbabb2"
+        ],
+        "x": 2225,
+        "y": 2780,
+        "wires": []
+    },
+    {
+        "id": "d7ba776e6f4de3ab",
+        "type": "link in",
+        "z": "d9ae606a9f4ff99f",
+        "name": "link in 431",
+        "links": [
+            "590d94f3a9ac11da"
+        ],
+        "x": 1765,
+        "y": 2920,
+        "wires": [
+            [
+                "72a38997ef8030d2"
+            ]
+        ]
+    },
+    {
+        "id": "282a07db47092dba",
+        "type": "link in",
+        "z": "d9ae606a9f4ff99f",
+        "name": "link in 432",
+        "links": [
+            "8341cb3d52cd4828"
+        ],
+        "x": 1765,
+        "y": 2980,
+        "wires": [
+            [
+                "1fdf8133098bd550"
+            ]
+        ]
+    },
+    {
+        "id": "5c568c39eddd3b9f",
+        "type": "link out",
+        "z": "d9ae606a9f4ff99f",
+        "name": "link out 243",
+        "mode": "link",
+        "links": [
+            "d3afc1ebf103c86c"
+        ],
+        "x": 2225,
+        "y": 2920,
+        "wires": []
+    },
+    {
+        "id": "91d24ff1d190c6bd",
+        "type": "link out",
+        "z": "d9ae606a9f4ff99f",
+        "name": "link out 244",
+        "mode": "link",
+        "links": [
+            "d3afc1ebf103c86c"
+        ],
+        "x": 2225,
+        "y": 2980,
+        "wires": []
+    },
+    {
+        "id": "74bdd07828655d68",
+        "type": "link in",
+        "z": "d9ae606a9f4ff99f",
+        "name": "link in 433",
+        "links": [
+            "0e31984180fcf1c8"
+        ],
+        "x": 1765,
+        "y": 3120,
+        "wires": [
+            [
+                "54880ff45d2523a7"
+            ]
+        ]
+    },
+    {
+        "id": "6c5c3df999bb1da6",
+        "type": "link in",
+        "z": "d9ae606a9f4ff99f",
+        "name": "link in 434",
+        "links": [
+            "6576d01b8d732a28"
+        ],
+        "x": 1765,
+        "y": 3180,
+        "wires": [
+            [
+                "767445b20475df53"
+            ]
+        ]
+    },
+    {
+        "id": "08f6cef0b6f74aa2",
+        "type": "link out",
+        "z": "d9ae606a9f4ff99f",
+        "name": "link out 245",
+        "mode": "link",
+        "links": [
+            "59bb4c5e1d2401c7"
+        ],
+        "x": 2225,
+        "y": 3120,
+        "wires": []
+    },
+    {
+        "id": "c4f7ec1aacfef08e",
+        "type": "link out",
+        "z": "d9ae606a9f4ff99f",
+        "name": "link out 246",
+        "mode": "link",
+        "links": [
+            "59bb4c5e1d2401c7"
+        ],
+        "x": 2225,
+        "y": 3180,
         "wires": []
     },
     {
