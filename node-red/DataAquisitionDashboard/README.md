@@ -126,7 +126,7 @@ docker run -d --name=grafana -p 3000:3000 grafana/grafana-enterprise:10.4.0-ubun
   <img src="Pic/Dashboard4.png" alt="import">
 </p>
 
-* ```Measurement``` column ==> in this column we can write for each input a label of what is actually measured (e.g. ```Temperature```, ```Pressure```, ```Voltage``` etc.)
+* ```Measurement``` column ==> in this column we can write for each input a label of what is actually measured (e.g. ```Temperature```, ```Pressure```, ```Voltage``` etc.). The default value (```Temperature``` or ```Voltage```) is automatically written when a certain type of config from the ```Config``` column is selected.
 * ```Unit``` column ==> in this column we write the unit of measurement (e.g. ```C```, ```F```, ```K```, ```Pa```, ```V``` etc.). The default value (```C``` or ```V```) is automatically written when a certain type of config from the ```Config``` column is selected.
 * ```Parameters``` column ==> in this column we write the needed parameters to convert resistance to temperature or voltage to any other unit. The default parameters are automatically written when a certain type of config from the ```Config``` column is selected.
 * ```SAVE SETUP``` button ==> when the whole setup is complete, we can save it so that it can be automatically loaded if something goes wrong with the Raspberry Pi (e.g. power loss). A file named ```global_settings.json``` is generated in ```/home/pi``` location.
@@ -134,20 +134,14 @@ docker run -d --name=grafana -p 3000:3000 grafana/grafana-enterprise:10.4.0-ubun
 ### Valid input configuration
 
 * In order to measure something correctly with this dashboard, we need to configure correctly the inputs we want to use.
-* Firstly, we select the ```Stack level```, then we choose the type of ```Config``` for the input, then we take a look at the ```Unit``` and the ```Parameters``` if the default values are there. If we want to change them we can do that.
-* Examples of valid configurations for ```Input 1``` (default values for ```Unit``` and ```Parameters```):
-
-![import](Pic/Dashboard6.png)
-
-![import](Pic/Dashboard7.png)
-
-* Then we write the ```Measurement``` label (optional step), select whatever ```Save Interval``` we want (or let it default at ```10 sec```), turn ```Master``` toggle on and then turn the ```Input``` toggle on for the input we previously configured (in our example case, ```Input 1```).
+* Firstly, we select the ```Stack level```, then we choose the type of ```Config``` for the input, then we take a look at the ```Measurement```, ```Unit``` and the ```Parameters``` if the default values are there. If we want to change them we can do that.
+* Then we select whatever ```Save Interval``` we want (or let it default at ```10 sec```), turn ```Master``` toggle on and then turn the ```Input``` toggle on for the input we previously configured (in our example case, ```Input 1```).
 
 ![import](Pic/Dashboard9.png)
 
 ![import](Pic/Dashboard8.png)
 
-* If all needed ```Parameters``` or the ```Unit``` are not configured for the selected ```Config``` type, the dashboard will throw a notification error ```Input X: Configuration incomplete!```
+* If all needed parameters are not configured for the selected ```Config``` type, the dashboard will throw a notification error ```Input X: Configuration incomplete!```
 * Example for ```Input 1``` where ```Unit``` is not configured/deleted:
 
 ![import](Pic/Dashboard10.png)
