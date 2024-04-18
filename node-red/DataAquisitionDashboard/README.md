@@ -146,8 +146,14 @@ docker run -d --name=grafana -p 3000:3000 grafana/grafana-enterprise:10.4.0-ubun
 
 ![import](Pic/Dashboard10.png)
 
-* Mandatory parameters for ```1K/10K thermistors```: ```Unit``` (```C```, ```F``` or ```K```) and ```Parameter``` ```B```. Optional: ```Measurement``` label (needed only for ```Graph view```).
-* Mandatory parameters for ```0-10V```: ```Unit``` (whatever the user wants to measure, e.g. ```V```, ```Pa``` etc.) and ```Parameters``` ```0V``` and ```10V```. Optional: ```Measurement``` label (needed only for ```Graph view```).
+* Mandatory parameters for ```1K/10K thermistors``` config:
+  * ```Unit``` (```C```, ```F``` or ```K```)
+  * ```Parameter``` ```B```
+  * Optional: ```Measurement``` label (needed only for ```Graph view```)
+* Mandatory parameters for ```0-10V``` config:
+  * ```Unit``` (whatever the user wants to measure, e.g. ```V```, ```Pa``` etc.)
+  * ```Parameters``` ```0V``` and ```10V```
+  * Optional: ```Measurement``` label (needed only for ```Graph view```).
 
 * If the ```16univin``` is not installed on the Raspberry Pi, the dashboard will throw a notification error ```Input X: Command not found!```.
 * If the selected ```Stack level``` is not the one configured on the board, the dashboard will throw a notification error ```Input X: Command failed!```
