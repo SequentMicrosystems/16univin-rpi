@@ -265,7 +265,7 @@ class SM16univin:
             (bool) Channel status
         """
         self._check_channel("dig_in", channel)
-        opto_mask = self._get_byte(I2C_MEM.DRY_CONTACT)
+        opto_mask = self._get_word(I2C_MEM.DRY_CONTACT)
         if(opto_mask & (1 << (channel - 1))):
             return True
         else:

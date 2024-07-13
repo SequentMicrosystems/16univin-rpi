@@ -3,13 +3,13 @@ DOC_SOURCE    = docs
 DOC_BUILD     = docs
 INDEXMD       = $(DOC_BUILD)/markdown/index.md
 
-PYTHON        = python
+PYTHON        = python3
 SETUP_PY      = setup.py
 DIST          = dist
 
 .PHONY: all dist markdown
 
-all: markdown dist
+all: dist
 	@echo "Everything done!"
 	@echo '  > Run "twine upload dist/*" to upload to pypi.org.'
 
