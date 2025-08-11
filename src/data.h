@@ -4,7 +4,7 @@
 
 #define CARD_NAME "16 Universal Inputs"
 #define PROGRAM_NAME "16univin"
-#define VERSION "1.0.0"
+#define VERSION "1.0.1"
 
 #define SLAVE_OWN_ADDRESS_BASE 0x58
 
@@ -70,7 +70,13 @@ enum
 	I2C_MEM_CALIB_KEY, //set calib point -> 0xaa; reset calibration on the channel -> 0x55
 	I2C_MEM_CALIB_STATUS,
 
-	I2C_RTC_YEAR_ADD,
+	//overlap for hardware ver2
+	I2C_MEM_UIN_SEL,
+	I2C_MEM_1K_SEL = I2C_MEM_UIN_SEL + 2,
+	I2C_MEM_10K_SEL = I2C_MEM_1K_SEL + 2,
+	// end overlap;	
+
+	I2C_RTC_YEAR_ADD = 178,
 	I2C_RTC_MONTH_ADD,
 	I2C_RTC_DAY_ADD,
 	I2C_RTC_HOUR_ADD,

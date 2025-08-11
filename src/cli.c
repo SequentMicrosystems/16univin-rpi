@@ -44,5 +44,7 @@ const CliCmdType *gCmdArray[] = {
 	&CMD_R10K_IN_CAL,
 	&CMD_CFG485_READ,
 	&CMD_CFG485_WRITE,
+	&CMD_IN_CONFIG_READ,
+	&CMD_IN_CONFIG_WRITE,
 	0
 };
