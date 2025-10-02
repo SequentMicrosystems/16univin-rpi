@@ -389,9 +389,9 @@ const CliCmdType CMD_IN_CONFIG_WRITE =
    {"incfgwr",
 	 2, 
 	 &doInCfgWrite,
-	"\tincfgwr:		Config input type to 0-10V(0); 1k Thermistor(1) or 10k Thermistor(2)\n",
-	"\tUsage:		"PROGRAM_NAME" <id> incfgwr <channel> <0/1/2>\n",
-	"\tExample:		"PROGRAM_NAME" 0 incfgwr 2 1; Set channel #2 on Board #0 as 1k thermistor input\n"
+	"  incfgwr:		Config input type to 0-10V(0); 1k Thermistor(1); 10k Thermistor(2); 4-20mA(3); 0_3V3(4)\n",
+	"  Usage:		"PROGRAM_NAME" <id> incfgwr <channel> <[0..4]>\n",
+	"  Example:		"PROGRAM_NAME" 0 incfgwr 2 1; Set channel #2 on Board #0 as 1k thermistor input\n"
 	};
 
 int doInCfgWrite(int argc, char *argv[])
@@ -421,48 +421,30 @@ int doInCfgWrite(int argc, char *argv[])
 		return ARG_RANGE_ERR;
 	}
 	val = atoi(argv[4]);
+	if(val < 0 || val > 4)
+	{
+		printf("Invalid input type (0->0-10V; 1->1K; 2->10k; 3->4-20mA; 4->0-3V3)!\n");
+		return ARG_RANGE_ERR;
+	}
 
 			
-	resp = i2cMem8Read(dev, I2C_MEM_UIN_SEL, buff, 6);
+	resp = i2cMem8Read(dev, I2C_MEM_IN_SEL_START_ADD + ((pin - 1) >> 1), buff, 1);
 	if (OK != resp)
 	{
 		printf("Fail to read config!\n");
 		return ERR;
 	}
-	uint16_t uin = 0;
-	uint16_t r1k = 0;
-	uint16_t r10k = 0;
-	memcpy(&uin, buff, 2);
-	memcpy(&r1k, buff+2, 2);
-	memcpy(&r10k, buff+4, 2);
-
-	switch (val)
+	if(pin%2)
 	{
-	case 0:
-		uin |= 1 << (pin - 1);
-		r1k &= ~(1 << (pin - 1));
-		r10k &= ~(1 << (pin - 1));
-		break;
-	case 1:
-		r1k |= 1 << (pin - 1);
-		uin &= ~(1 << (pin - 1));
-		r10k &= ~(1 << (pin - 1));
-		break;
-	case 2:
-		r10k |= 1 << (pin - 1);
-		r1k &= ~(1 << (pin - 1));
-		uin &= ~(1 << (pin - 1));
-		break;
-	default:
-		printf("Invalid input type (0->0-10V; 1->1K; 2->10k)!\n");
-		return ARG_RANGE_ERR;
-		break;
+		buff[0] = val | (0xf0 & buff[0]);
 	}
-	memcpy(buff, &uin, 2);
-	memcpy(buff+2, &r1k, 2);
-	memcpy(buff+4, &r10k, 2);
+	else
+	{
+		buff[0] = (val << 4) | (0x0f & buff[0]);
+	}
 
-	resp = i2cMem8Write(dev, I2C_MEM_UIN_SEL, buff, 6);
+
+	resp = i2cMem8Write(dev, I2C_MEM_IN_SEL_START_ADD + ((pin - 1) >> 1), buff, 1);
 	if (OK != resp)
 	{
 		printf("Fail to write configuration\n");
@@ -476,9 +458,9 @@ int doInCfgWrite(int argc, char *argv[])
 int doInCfgRead(int argc, char *argv[]);
 const CliCmdType CMD_IN_CONFIG_READ = 
    {"incfgrd", 2, &doInCfgRead,
-	"\tincfgrd:		Display input type  0-10V(0); 1k Thermistor(1) or 10k Thermistor(2)\n",
-	"\tUsage:		"PROGRAM_NAME" <id> incfgrd <channel>\n",
-	"\tExample:		"PROGRAM_NAME" 0 incfgrd 2; Display channel #2 on Board #0 input type\n"
+	"  incfgrd:		Display input type  0-10V(0); 1k Thermistor(1); 10k Thermistor(2); 4-20mA(3); 0_3V3(4)\n",
+	"  Usage:		"PROGRAM_NAME" <id> incfgrd <channel>\n",
+	"  Example:		"PROGRAM_NAME" 0 incfgrd 2; Display channel #2 on Board #0 input type\n"
 	};
 
 int doInCfgRead(int argc, char *argv[])
@@ -508,33 +490,20 @@ int doInCfgRead(int argc, char *argv[])
 		return ARG_RANGE_ERR;
 	}
 	
-	resp = i2cMem8Read(dev, I2C_MEM_UIN_SEL, buff, 6);
+	resp = i2cMem8Read(dev, I2C_MEM_IN_SEL_START_ADD + ((pin - 1) >> 1), buff, 1);
 	if (OK != resp)
 	{
 		printf("Fail to read config!\n");
 		return ERR;
 	}
-	uint16_t uin = 0;
-	uint16_t r1k = 0;
-	uint16_t r10k = 0;
-	memcpy(&uin, buff, 2);
-	memcpy(&r1k, buff+2, 2);
-	memcpy(&r10k, buff+4, 2);
-	if(0 != (uin & (1 << (pin - 1))))
+
+	if(pin % 2)
 	{
-		printf("0\n");
-	}
-	else if(0 != (r1k & (1 << (pin - 1))))
-	{
-		printf("1\n");
-	}
-	else if(0 != (r10k & (1 << (pin - 1))))
-	{
-		printf("2\n");
+		printf("%d\n", (int)(0x0f & buff[0]));
 	}
 	else
 	{
-		printf("Invalid configuration detected!\n");
+		printf("%d\n", (int)(0x0f & (buff[0] >> 4)));
 	}
 	return OK;
 }
