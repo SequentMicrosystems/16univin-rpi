@@ -3,7 +3,7 @@
 
 bool badRInCh(int ch) {
 	if(!(MIN_CH_NO <= ch && ch <= UNIV_CH_NR)) {
-		printf("0-10V input channel out of range![%d..%d]\n", MIN_CH_NO, UNIV_CH_NR);
+		printf("Thermistor input channel out of range![%d..%d]\n", MIN_CH_NO, UNIV_CH_NR);
 		return true;
 	}
 	return false;
