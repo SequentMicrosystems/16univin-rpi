@@ -128,6 +128,7 @@ class SM16univin:
 
     def get_u_in(self, channel):
         """Get 0-10V input channel value in volts.
+        For cards version 3.0 and later, prefer using get_in() method, due to configurable input types. This may not read 0-10V if the channel is configured for another input type.
 
         Args:
             channel (int): Channel number
@@ -138,6 +139,20 @@ class SM16univin:
         self._check_channel("u_in", channel)
         value = self._get_word(I2C_MEM.U_IN + (channel - 1) * 2)
         return value / data.VOLT_TO_MILIVOLT
+    
+    def get_in(self, channel):
+        """For cards version 3.0 and later.
+        Get input channel value. The returned value should be interpreted according to the configured input type.
+        The input type can be configured for each channel using the cfg_input_type() method.
+        Configured inputs can be 0-10V, 4-20mA, 0-3.3V. If the input type is r1k or r10k, use the get_r1k_in() or get_r10k_in() methods to read the value in ohms.
+
+        Args:
+            channel (int): Channel number
+
+        Returns:
+            (float) Input value
+        """
+        return self.get_u_in(channel)
 
     def get_r1k_in(self, channel):
         """Get 1k thermistor input channel value in ohms.
