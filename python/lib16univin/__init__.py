@@ -359,3 +359,60 @@ class SM16univin:
             return True
         else:
             return False
+    
+    def cfg_input_type(self, channel, input_type):
+        """Configure input type. Used for version 3.0 and later of the card. One type per channel.
+        The types are:
+        "0_10V": 0-10V input
+        "r1k": 1k thermistor input
+        "r10k": 10k thermistor input
+        "4_20mA": 4-20mA input
+        "0_3V3": 0-3.3V input
+        
+        Args:
+            channel (int): Channel number
+            input_type (str): Input type. Must be "0_10V", "r1k", "r10k", "4_20mA" or "0_3V3"
+        """
+        input_type_map = {
+            "0_10V": 0,
+            "r1k": 1,
+            "r10k": 2,
+            "4_20mA": 3,
+            "0_3V3": 4,
+        }
+        if input_type not in input_type_map:
+            raise ValueError("Invalid input type!")
+        self._check_channel("u_in", channel)
+        sel_value = input_type_map[input_type]
+        resp = self._get_byte(I2C_MEM.I2C_MEM_IN_SEL_START_ADD + (channel - 1) // 2)
+        if channel % 2:
+            resp = (resp & 0xF0) | (sel_value & 0x0F)
+        else:
+            resp = (resp & 0x0F) | ((sel_value & 0x0F) << 4)
+        self._set_byte(I2C_MEM.I2C_MEM_IN_SEL_START_ADD + (channel - 1) // 2, resp)
+
+    def get_input_type(self, channel):
+        """Get configured input type for a channel. Used for version 3.0 and later of the card.
+
+        Args:
+            channel (int): Channel number
+
+        Returns:
+            (str): Input type name: "0_10V", "r1k", "r10k", "4_20mA" or "0_3V3"
+        """
+        input_type_map = {
+            0: "0_10V",
+            1: "r1k",
+            2: "r10k",
+            3: "4_20mA",
+            4: "0_3V3",
+        }
+        self._check_channel("u_in", channel)
+        resp = self._get_byte(I2C_MEM.I2C_MEM_IN_SEL_START_ADD + (channel - 1) // 2)
+        if channel % 2:
+            sel_value = resp & 0x0F
+        else:
+            sel_value = (resp >> 4) & 0x0F
+        if sel_value not in input_type_map:
+            raise ValueError("Invalid input type value read from device: {}".format(sel_value))
+        return input_type_map[sel_value]
