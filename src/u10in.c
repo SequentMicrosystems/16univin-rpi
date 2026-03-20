@@ -13,7 +13,7 @@ const CliCmdType CMD_U10_IN_READ = {/*{{{*/
 	"uinrd",
 	2,
 	&doU10InRead,
-	"  uinrd            Read 0-10V input voltage value(V)\n",
+	"  uinrd            Read 0-10V input voltage value(V). NOTE: For cards version 3.0 and later, the output value actually depends on the type configured with incfgwr(0-10V/4-20mA/0-3V3)\n",
 	"  Usage:           "PROGRAM_NAME" <id> uinrd <channel>\n",
 	"  Example:         "PROGRAM_NAME" 0 uinrd 2 #Read voltage on 0-10V input channel #2 on board #0\n",
 };
