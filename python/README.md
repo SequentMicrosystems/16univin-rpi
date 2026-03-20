@@ -39,6 +39,8 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 # Documentation
 
+<a id="module-lib16univin"></a>
+
 ### *class* lib16univin.SM16univin(stack=0, i2c=1)
 
 Bases: `object`
@@ -48,6 +50,25 @@ Python class to control the 16 Universal Analog Inputs Card for Raspberry Pi.
 * **Parameters:**
   * **stack** (*int*) – Stack level/device number.
   * **i2c** (*int*) – i2c bus number
+
+#### cfg_input_type(channel, input_type)
+
+Configure the input type for a channel. Available on cards version 3.0 and later.
+On older cards the input type is set via hardware jumpers and cannot be changed in software.
+Cards V3+ also introduce the 4-20mA and 0-3.3V input types, in addition to the existing
+0-10V and thermistor types. Voltage and current types (0-10V, 4-20mA, 0-3.3V) can be read
+using get_in(); thermistor types use get_r1k_in() or get_r10k_in().
+
+The available input types are:
+: “0_10V”:  0-10V voltage input
+  “r1k”:    1k thermistor input
+  “r10k”:   10k thermistor input
+  “4_20mA”: 4-20mA current input
+  “0_3V3”:  0-3.3V voltage input
+
+* **Parameters:**
+  * **channel** (*int*) – Channel number
+  * **input_type** (*str*) – Input type. Must be “0_10V”, “r1k”, “r10k”, “4_20mA” or “0_3V3”
 
 #### get_all_dig_in()
 
@@ -107,6 +128,31 @@ Get digital (dry contact) inputs edges counter for one channel.
 * **Returns:**
   (int) dry contact transitions counter
 
+#### get_in(channel)
+
+Read the input channel value. Available on cards version 3.0 and later.
+On V3+ cards, the input type is software-configurable per channel using cfg_input_type().
+All three electrical types (0-10V, 4-20mA and 0-3.3V) share the same register, so the
+unit of the returned value depends on the configured type: volts for 0-10V and 0-3.3V,
+milliamps for 4-20mA. For 1k or 10k thermistor configurations, use get_r1k_in() or
+get_r10k_in() instead, which return resistance in ohms.
+
+* **Parameters:**
+  **channel** (*int*) – Channel number
+* **Returns:**
+  (float) Input channel value in volts (0-10V, 0-3.3V) or milliamps (4-20mA)
+
+#### get_input_type(channel)
+
+Get the configured input type for a channel. Available on cards version 3.0 and later.
+
+* **Parameters:**
+  **channel** (*int*) – Channel number
+* **Returns:**
+  “0_10V”, “r1k”, “r10k”, “4_20mA” or “0_3V3”
+* **Return type:**
+  (str) Configured input type
+
 #### get_led(led)
 
 Get led state.
@@ -143,12 +189,13 @@ Get rtc time.
 
 #### get_u_in(channel)
 
+For cards prior to version 3.0. On version 3.0 and later, prefer get_in(), which reflects the configured input type.
 Get 0-10V input channel value in volts.
 
 * **Parameters:**
   **channel** (*int*) – Channel number
 * **Returns:**
-  (float) Input value in volts
+  (float) Input channel value in volts
 
 #### get_version()
 

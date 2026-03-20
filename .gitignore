@@ -54,10 +54,14 @@ dkms.conf
 # Cli
 16univin
 
+# Python stuff
+__pycache__/
 
 # Python build
 
 python/build/
 python/dist
 python/*.egg-info
-16univin
+
+python/docs/doctrees/
+python/docs/markdown/

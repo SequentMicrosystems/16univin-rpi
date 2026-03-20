@@ -127,30 +127,33 @@ class SM16univin:
         self._set_word(I2C_MEM.LEDS, val)
 
     def get_u_in(self, channel):
-        """Get 0-10V input channel value in volts.
-        For cards version 3.0 and later, prefer using get_in() method, due to configurable input types. This may not read 0-10V if the channel is configured for another input type.
+        """
+        For cards prior to version 3.0. On version 3.0 and later, prefer get_in(), which reflects the configured input type.
+        Get 0-10V input channel value in volts.
 
         Args:
             channel (int): Channel number
 
         Returns:
-            (float) Input value in volts
+            (float) Input channel value in volts
         """
         self._check_channel("u_in", channel)
         value = self._get_word(I2C_MEM.U_IN + (channel - 1) * 2)
         return value / data.VOLT_TO_MILIVOLT
     
     def get_in(self, channel):
-        """For cards version 3.0 and later.
-        Get input channel value. The returned value should be interpreted according to the configured input type.
-        The input type can be configured for each channel using the cfg_input_type() method.
-        Configured inputs can be 0-10V, 4-20mA, 0-3.3V. If the input type is r1k or r10k, use the get_r1k_in() or get_r10k_in() methods to read the value in ohms.
+        """Read the input channel value. Available on cards version 3.0 and later.
+        On V3+ cards, the input type is software-configurable per channel using cfg_input_type().
+        All three electrical types (0-10V, 4-20mA and 0-3.3V) share the same register, so the
+        unit of the returned value depends on the configured type: volts for 0-10V and 0-3.3V,
+        milliamps for 4-20mA. For 1k or 10k thermistor configurations, use get_r1k_in() or
+        get_r10k_in() instead, which return resistance in ohms.
 
         Args:
             channel (int): Channel number
 
         Returns:
-            (float) Input value
+            (float) Input channel value in volts (0-10V, 0-3.3V) or milliamps (4-20mA)
         """
         return self.get_u_in(channel)
 
@@ -376,14 +379,19 @@ class SM16univin:
             return False
     
     def cfg_input_type(self, channel, input_type):
-        """Configure input type. Used for version 3.0 and later of the card. One type per channel.
-        The types are:
-        "0_10V": 0-10V input
-        "r1k": 1k thermistor input
-        "r10k": 10k thermistor input
-        "4_20mA": 4-20mA input
-        "0_3V3": 0-3.3V input
-        
+        """Configure the input type for a channel. Available on cards version 3.0 and later.
+        On older cards the input type is set via hardware jumpers and cannot be changed in software.
+        Cards V3+ also introduce the 4-20mA and 0-3.3V input types, in addition to the existing
+        0-10V and thermistor types. Voltage and current types (0-10V, 4-20mA, 0-3.3V) can be read
+        using get_in(); thermistor types use get_r1k_in() or get_r10k_in().
+
+        The available input types are:
+            "0_10V":  0-10V voltage input
+            "r1k":    1k thermistor input
+            "r10k":   10k thermistor input
+            "4_20mA": 4-20mA current input
+            "0_3V3":  0-3.3V voltage input
+
         Args:
             channel (int): Channel number
             input_type (str): Input type. Must be "0_10V", "r1k", "r10k", "4_20mA" or "0_3V3"
@@ -407,13 +415,13 @@ class SM16univin:
         self._set_byte(I2C_MEM.I2C_MEM_IN_SEL_START_ADD + (channel - 1) // 2, resp)
 
     def get_input_type(self, channel):
-        """Get configured input type for a channel. Used for version 3.0 and later of the card.
+        """Get the configured input type for a channel. Available on cards version 3.0 and later.
 
         Args:
             channel (int): Channel number
 
         Returns:
-            (str): Input type name: "0_10V", "r1k", "r10k", "4_20mA" or "0_3V3"
+            (str) Configured input type: "0_10V", "r1k", "r10k", "4_20mA" or "0_3V3"
         """
         input_type_map = {
             0: "0_10V",
